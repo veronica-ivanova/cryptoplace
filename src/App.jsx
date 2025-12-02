@@ -2,6 +2,7 @@ import { Navbar } from "./components/navbar/navbar";
 import { Routes, Route } from "react-router-dom";
 import  { Home }  from "./pages/home/home";
 import  { Coin } from "./pages/coin/coin";
+import { Footer } from "./components/footer/footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/coin/:coinId" element={<Coin/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 };
